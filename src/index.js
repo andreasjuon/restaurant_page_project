@@ -1,5 +1,11 @@
 import "./styles.css"; 
 
+if (process.env.NODE_ENV !== 'production') {
+
+    console.log('Looks like we are in development mode!');
+
+}
+
 // import scripts for all the tabs
 import loadPage from "./loadPage.js"; 
 import loadMenu from "./loadmenu.js"; 
