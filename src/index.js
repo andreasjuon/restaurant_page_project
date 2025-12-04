@@ -10,6 +10,7 @@ if (process.env.NODE_ENV !== 'production') {
 import loadPage from "./loadPage.js"; 
 import loadMenu from "./loadmenu.js"; 
 import loadcontact from "./loadcontact.js"; 
+import loadNewsletter from "./loadnewsletter.js"; 
 
 // initial page load
 loadPage();
@@ -27,6 +28,9 @@ document.addEventListener("click", (event) => {
     }
     if(id == "contact") {
         loadcontact();
+    };
+    if (id == "newsletter") {
+      loadNewsletter();
     }
 })
 
